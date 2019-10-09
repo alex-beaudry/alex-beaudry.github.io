@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ALEX</title>
+<link href="../../css/stylesheet.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript1.1"> var playing = 0; var timeoutID = 0; var slideShowNextLink = "../../pages/image/imagepage198.html"; var slideShowDelay = 5000; var agt = navigator.userAgent.toLowerCase(); var is_ie = (agt.indexOf("msie") != -1); if (location.href.indexOf("?") != -1) { urlQuery = location.href.split("?"); playing = parseInt(urlQuery[1]); } if (playing == 1) { startSlideShow(); } function slideShow() { window.location.href = slideShowNextLink + "?" + "1"; timeoutID = setInterval("slideShow()", slideShowDelay); } function startSlideShow() { clearTimeout(timeoutID); timeoutID = setInterval("slideShow()", slideShowDelay); } function stopSlideShow() { clearTimeout(timeoutID); if (is_ie) { fakeTimeoutID = setInterval("redirectDelay()", 0); } else { redirectDelay(); } } function redirectDelay() { tempArray = window.location.href.split("?"); window.location.href = tempArray[0]; } </script>
+</head>
+<body>
+<div id="nav">
+<span style="float:right">
+<a href="javascript:void(0)" name="slideShowControl" onclick="startSlideShow()">start slideshow</a> | <a href="javascript:void(0)" name="slideShowControl" onclick="stopSlideShow()">stop slideshow</a>
+</span>
+<a href="../../pages/image/imagepage196.html">previous</a> | <a href="../../index.html">index</a> | <a href="../../pages/image/imagepage198.html">next</a>
+</div>
+<img id="photo" src="../../images/image/196.JPG" width="600" height="400" />
+</body>
+</html>
