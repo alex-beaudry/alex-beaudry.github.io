@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-	font-size: 13px;
+	font-size: 16px;
 	background-color: #B5CADD;
 	text-align: center;
     background-image: url('bg.jpg');
@@ -25,7 +25,7 @@ body {
 
 #content {
     margin: 0 auto;
-    width: 500px;
+    width: 600px;
     text-align: left;
 }
 
